@@ -30,8 +30,6 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-	NSLog( @"Acro at start");
-
 	self.responseTable.hidden = YES;
 	self.longFormList = [NSMutableArray arrayWithCapacity: 10];
 }
@@ -60,8 +58,6 @@
 	// Text entry is acceptable
 	[self.inputText resignFirstResponder];
 	
-	NSLog( @"Sending acronym: %@", lookupText);
-
 	MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo: self.view animated: YES];
 	hud.labelText = [NSString stringWithFormat: @"Looking up '%@'...", lookupText];
 
@@ -89,7 +85,6 @@
 						 // Walk array entries
 						 for (NSDictionary *entry in lfs) {
 							 NSString *entryName = [entry objectForKey: @"lf"];
-							 NSLog(@"%@", entryName);
 							 [self.longFormList addObject: entryName];
 							 
 						 }
@@ -126,7 +121,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	
-	NSLog(@"numberOfRows: %lu", (unsigned long)[self.longFormList count]);
 	if ( [self.longFormList count] == 0 ) {
 		return 1;
 	} else {
@@ -144,21 +138,6 @@
 	}
 
 	return cell;
-}
-
-
-#pragma mark - Table delegate
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-	
-	NSLog(@"textFieldDidBeginEditing");
-
-}
-
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-	
-	NSLog(@"textFieldDidEndEditing");
 }
 
 
