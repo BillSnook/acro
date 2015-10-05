@@ -45,6 +45,7 @@
 		A90302861BC1AAC900120A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90302901BC1BA9000120A2E /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A98D93F21BC1BC5B005D74D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A98D93F41BC20B30005D74D3 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		D612FD32136CD07102839AEB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4351EDB1AA739E447C35D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +120,7 @@
 				A90302761BC1AAC800120A2E /* Assets.xcassets */,
 				A90302781BC1AAC800120A2E /* LaunchScreen.storyboard */,
 				A903027B1BC1AAC800120A2E /* Info.plist */,
+				A98D93F41BC20B30005D74D3 /* README */,
 				A903028F1BC1AB5800120A2E /* Utilities */,
 				A903026A1BC1AAC800120A2E /* Supporting Files */,
 			);
